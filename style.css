@@ -8,15 +8,11 @@ html, body {
 }
 
 body {
-  overscroll-behavior: none;
   overflow-x: hidden;
-  position: fixed;
   width: 100%;
 }
 
 * {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
     user-select: none;
     box-sizing: border-box;
 }
