@@ -120,7 +120,7 @@ main {
     content: url('img/GITHUBL.png');
 }
 
-.link[href="#contacto"]:hover .link-img {
+.link[href="contacto.html"]:hover .link-img {
     content: url('img/CONTACTOL.png');
 }
 
@@ -206,6 +206,10 @@ main {
 }
 
 @media (max-width: 768px) {
+
+    .grid-herramientas {
+        gap: 15px;
+    }
 
     .tool-item {
         height: 100px;
