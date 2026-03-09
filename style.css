@@ -11,6 +11,16 @@ body {
   width: 100%;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+input, textarea {
+  user-select: text;
+}
+
 .full {
     height: 200vh;
     background: #FFFFFF;
