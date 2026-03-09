@@ -96,9 +96,9 @@ main {
     transition: all 0.5s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 37.5em) {
     #container {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-template-columns: 1fr;
     }
     .link-img {
         height: 150px;
@@ -218,7 +218,7 @@ main {
     max-height: 150px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 37.5em){
 
     .grid-herramientas {
         gap: 15px;
