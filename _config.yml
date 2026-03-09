@@ -2,7 +2,6 @@
 title: Mi Portfolio
 email: unaign008@gmail.com
 description: Portfolio de proyectos desarrollado con HTML y Jekyll.
-theme: none
 
 # Configuración de URLs (Esto quita las fechas de los enlaces)
 permalink: /proyectos/:title/
@@ -13,3 +12,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - .sass-cache
+
+# Reemplaza 'mi-repo' por el nombre exacto de tu repositorio en GitHub
+baseurl: "/portfolio"
+url: "https://uunaign.github.io"
