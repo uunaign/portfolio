@@ -2,6 +2,7 @@
 title: Mi Portfolio
 email: tu@email.com
 description: Portfolio de proyectos desarrollado con HTML y Jekyll.
+theme: none
 
 # Configuración de URLs (Esto quita las fechas de los enlaces)
 permalink: /proyectos/:title/
