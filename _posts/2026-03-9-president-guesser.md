@@ -1,9 +1,4 @@
----
-layout: post
-title: "President Guesser"
-description: "Un programa de python que usa un algoritmo para adivinar en que personaje piensas en la menor cantidad de preguntas"
-imagen: "/element-images/PRESIDENT-GUESSER.png"
----
+
 # President-Guesser
 Este proyecto es un sistema diseñado para la identificación de líderes políticos mediante un árbol de decisión dinámico. El motor optimiza la selección de preguntas basándose en la maximización de la ganancia de información (Information Gain).
 
