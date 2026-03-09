@@ -12,6 +12,10 @@ html {
     background-size: cover;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 header {
     display: flex;
@@ -35,6 +39,13 @@ header {
 
 #header-url {
     height: 70px;
+}
+
+#earth-draw {
+    height: 300px;
+    position: absolute;
+    top: 639px;
+    z-index: -1;
 }
 
 main {
@@ -79,6 +90,10 @@ main {
     .link-img {
         height: 150px;
     }
+
+    #earth-draw {
+        opacity: 30%;
+    }
 }
 
 
@@ -100,7 +115,7 @@ main {
     content: url('img/CURRICULUML.png');
 }
 
-.link[href="#github"]:hover .link-img {
+.link[href="https://github.com/uunaign"]:hover .link-img {
     content: url('img/GITHUBL.png');
 }
 
@@ -129,6 +144,12 @@ main {
     top: 0;
 }
 
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+}
+
 .proyect-container {
     width: 60vw;
     padding: 20px;
@@ -138,9 +159,23 @@ main {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.2s;
+
+}
+
+.proyect-container:hover {
+    transition: all 0.2s;
+    scale: 1.05;
 }
 
 .proyect-image {
     width: 100%;
     border-radius: 16px;
+}
+
+
+
+.spacer {
+    display: block;
+    height: 100px;
 }
