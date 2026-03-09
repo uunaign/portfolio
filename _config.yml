@@ -1,1 +1,14 @@
+# Información del sitio
+title: Mi Portfolio
+email: tu@email.com
+description: Portfolio de proyectos desarrollado con HTML y Jekyll.
+
+# Configuración de URLs (Esto quita las fechas de los enlaces)
 permalink: /proyectos/:title/
+
+# Excluir archivos que no queremos que se "limpien" o procesen
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .sass-cache
