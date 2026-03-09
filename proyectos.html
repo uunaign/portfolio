@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unaign.xyz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-container">
+            <a href="index.html"><img id="header-logo" src="img/LOGO.png" alt="logo"></a>
+            <img id="header-url" src="img/URL.png" alt="url">
+        </div>
+    </header>
+    <main>
+        <div id="main-category">
+            <div id="hero-category">
+                <img id="title-category" src="img/PROYECTOS.png" alt="Unai Garcia">
+            </div>
+            <div class="grid-proyectos">
+                {% for post in site.posts %}
+                <div class="tarjeta">
+                    <img src="{{ post.imagen }}" alt="{{ post.title }}">
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.description }}</p>
+                    <a href="{{ post.url }}">Ver proyecto</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
