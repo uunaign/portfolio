@@ -111,6 +111,16 @@ main {
 
 }
 
+@media (max-width: 30.5em) {
+    #container {
+        grid-template-columns: 2fr;
+    }
+    .link-img {
+        height: 180px;
+    }
+
+}
+
 
 
 
@@ -223,6 +233,10 @@ main {
 
     .proyect-container {
         padding: 10px;
+    }
+
+    .proyect-image {
+        border-radius: 24px;
     }
 
     .grid-herramientas {
