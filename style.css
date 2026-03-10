@@ -54,9 +54,11 @@ header {
 }
 
 #earth-draw {
-    height: 300px;
+    width: 20vw;
     position: absolute;
-    top: 68%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: -1;
 }
 
@@ -108,7 +110,8 @@ main {
     }
 
     #earth-draw {
-        display: none;
+        opacity: 30%;
+        min-width: 150px;
     }
 
 }
