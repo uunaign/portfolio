@@ -57,7 +57,7 @@ header {
 #earth-draw {
     height: 300px;
     position: absolute;
-    top: 83%;
+    top: 68%;
     z-index: -1;
 }
 
