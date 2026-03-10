@@ -53,7 +53,8 @@ header {
 #earth-draw {
     height: 300px;
     position: absolute;
-    top: 639px;
+    top: 50%;
+    transform: translateY(-50);
     z-index: -1;
 }
 
