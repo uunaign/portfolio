@@ -45,8 +45,19 @@ header {
 }
 
 #header-logo {
-    height: 70px;
+    height: 50px;
     width: auto;
+}
+
+#header-logo:hover {
+    transition: all 0.2s;
+    transform: rotate(5deg);
+    scale: 1.1;
+}
+
+#header-logo:active {
+    scale: 0.9;
+    transform: rotate(-5deg);
 }
 
 #header-url {
