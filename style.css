@@ -96,7 +96,7 @@ main {
     transition: all 0.5s ease;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 60.5em) {
     #container {
         grid-template-columns: 1fr;
     }
@@ -107,16 +107,6 @@ main {
     #earth-draw {
         opacity: 30%;
         scale: 0.7;
-    }
-
-}
-
-@media (max-width: 30.5em) {
-    #container {
-        grid-template-columns: 2fr;
-    }
-    .link-img {
-        height: 180px;
     }
 
 }
@@ -229,10 +219,11 @@ main {
     max-height: 150px;
 }
 
-@media (max-width: 37.5em){
+@media (max-width: 60.5em){
 
     .proyect-container {
         padding: 10px;
+        width: 90vw;
     }
 
     .proyect-image {
@@ -303,7 +294,7 @@ input {
     font-size: large;
 }
 
-@media (max-width: 37.5em){
+@media (max-width: 60.5em){
     fieldset {
         scale: 0.7;
     }
