@@ -221,6 +221,10 @@ main {
 
 @media (max-width: 37.5em){
 
+    .proyect-container {
+        padding: 10px;
+    }
+
     .grid-herramientas {
         gap: 10px;
     }
