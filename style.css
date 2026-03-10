@@ -221,12 +221,12 @@ main {
 @media (max-width: 37.5em){
 
     .grid-herramientas {
-        gap: 15px;
+        gap: 10px;
     }
 
     .tool-item {
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 70px;
     }
     .tool-item img {
         max-width: 50px;
