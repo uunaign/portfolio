@@ -106,6 +106,7 @@ main {
 
     #earth-draw {
         opacity: 30%;
+        scale: 0.7;
     }
 
 }
