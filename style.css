@@ -2,8 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    overflow:visible;
+    overflow: visible;
 
+}
+
+.important {
+    height: auto !important;
+    position: relative !important;
 }
 
 .full {
@@ -21,7 +26,6 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 
 a {
