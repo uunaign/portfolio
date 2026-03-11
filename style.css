@@ -338,6 +338,8 @@ input {
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: start;
+    align-items: center;
 }
 
 #info-descripcion {
