@@ -411,13 +411,11 @@ input {
     margin: 0 0 50px 0;
 }
 
-.filter-container img {
-    width: 10%;
-}
-
-.filtros img {
+.filter-titles {
     transition: opacity 0.3s ease;
     cursor: pointer;
+    width: 10%;
+
 }
 
 @media (max-width: 40.5em){
@@ -425,7 +423,7 @@ input {
     .filtros {
         flex-direction: column;
     }
-    .filter-container img {
+    .filter-titles {
         width: 40%;
     }
 

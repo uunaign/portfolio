@@ -23,14 +23,14 @@
                 <img id="title-category" src="img/PROYECTOS.png" alt="Unai Garcia">
             </div>
             <div class="filter-container">
-                <img src="img/FILTROS.png" alt="filtros:">
+                <img class="filter-titles" src="img/FILTROS.png" alt="filtros:">
                     <div class="filtros">
-                        <img src="img/PROYECTOD_0002_electronicsT.png" alt="electronica" data-filter="electronic" style="cursor: pointer;">
-                        <img src="img/PROYECTOD_0001_codingT.png" alt="programacion" data-filter="coding" style="cursor: pointer;">
-                        <img src="img/PROYECTOD_0000_3dpT.png" alt="3d printing" data-filter="print3d" style="cursor: pointer;">
-                        <img src="img/PROYECTOD_0003_creativeT.png" alt="creative" data-filter="creative" style="cursor: pointer;">
+                        <img class="filter-titles" src="img/PROYECTOD_0002_electronicsT.png" alt="electronica" data-filter="electronic" style="cursor: pointer;">
+                        <img class="filter-titles" src="img/PROYECTOD_0001_codingT.png" alt="programacion" data-filter="coding" style="cursor: pointer;">
+                        <img class="filter-titles" src="img/PROYECTOD_0000_3dpT.png" alt="3d printing" data-filter="print3d" style="cursor: pointer;">
+                        <img class="filter-titles" src="img/PROYECTOD_0003_creativeT.png" alt="creative" data-filter="creative" style="cursor: pointer;">
                         
-                        <img id="remove-filters" src="img/close.png" alt="remove filters" style="display: none; cursor: pointer;">
+                        <img class="filter-titles" id="remove-filters" src="img/close.png" alt="remove filters" style="display: none; cursor: pointer;">
                     </div>
             </div>
             <div class="grid-proyectos">
@@ -100,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = button.getAttribute('data-filter');
             
             projects.forEach(project => {
-                // Comprobamos si la lista de clases contiene la categoría
                 if (project.classList.contains(category)) {
                     project.style.setProperty('display', 'block', 'important');
                 } else {
@@ -108,7 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Gestión visual de botones
             removeBtn.style.display = 'inline-block';
             filterButtons.forEach(btn => btn.style.opacity = '0.2');
             button.style.opacity = '1';
