@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="full">
+<html lang="es" class="long">
 
 <head>
     <meta charset="UTF-8">
@@ -22,9 +22,20 @@
             <div id="hero-category">
                 <img id="title-category" src="img/PROYECTOS.png" alt="Unai Garcia">
             </div>
+            <div class="filter-container">
+                <img src="img/FILTROS.png" alt="filtros:">
+                    <div class="filtros">
+                        <img src="img/PROYECTOD_0002_electronicsT.png" alt="electronica" data-filter="electronic" style="cursor: pointer;">
+                        <img src="img/PROYECTOD_0001_codingT.png" alt="programacion" data-filter="coding" style="cursor: pointer;">
+                        <img src="img/PROYECTOD_0000_3dpT.png" alt="3d printing" data-filter="print3d" style="cursor: pointer;">
+                        <img src="img/PROYECTOD_0003_creativeT.png" alt="creative" data-filter="creative" style="cursor: pointer;">
+                        
+                        <img id="remove-filters" src="img/close.png" alt="remove filters" style="display: none; cursor: pointer;">
+                    </div>
+            </div>
             <div class="grid-proyectos">
 
-                <a href="https://gallery.unaign.xyz" target="_blank" rel="noopener"><div class="proyect-container">
+                <a class="creative" href="https://gallery.unaign.xyz" target="_blank" rel="noopener"><div class="proyect-container">
                     <img class="proyect-image" src="element-images/gallery.png" alt="gallery">
                     <div id="info">
                         <h1 class="proyect-title">Gallery</h1>
@@ -33,7 +44,7 @@
                     </div>
                 </div></a>
 
-                <a href="https://github.com/uunaign/product-data-extractor" target="_blank" rel="noopener"><div class="proyect-container">
+                <a class="coding" href="https://github.com/uunaign/product-data-extractor" target="_blank" rel="noopener"><div class="proyect-container">
                     <img class="proyect-image" src="element-images/product-data-extractor.png" alt="product-data-extractor">
                     <div id="info">
                         <h1 class="proyect-title">Product data extractor</h1>
@@ -41,16 +52,15 @@
                     </div>
                 </div></a>
 
-                <a href="https://github.com/uunaign/President-Guesser" target="_blank" rel="noopener"><div class="proyect-container">
+                <a class="coding" href="https://github.com/uunaign/President-Guesser" target="_blank" rel="noopener"><div class="proyect-container">
                     <img class="proyect-image" src="element-images/PRESIDENT-GUESSER.png" alt="president-guesser">
                     <div id="info">
                         <h1 class="proyect-title">President guesser</h1>
-                        <p>Adivina en que presidente estas pensando usando un algoritmo basado en la maximización de la ganancia de información (Information Gain).<br> Versión interactiva en <a style="color: blue; text-decoration: underline;" href="https://gallery.unaign.xyz/president-guesser/">https://gallery.unaign.xyz/president-guesser/</a>
-                        </p>
+                        <p>Adivina en que presidente estas pensando usando un algoritmo basado en la maximización de la ganancia de información (Information Gain).</p>
                     </div>
                 </div></a>
 
-                <a href="https://blog.unaign.xyz/thinkbot" target="_blank" rel="noopener"><div class="proyect-container">
+                <a class="print3d electronic" href="https://blog.unaign.xyz/thinkbot" target="_blank" rel="noopener"><div class="proyect-container">
                     <img class="proyect-image" src="element-images/thinkbot.png" alt="thinkbot">
                     <div id="info">
                         <h1 class="proyect-title">ThinkBot: Robótica Educativa Open-Source</h1>
@@ -58,7 +68,7 @@
                     </div>
                 </div></a>
 
-                <a href="https://uunaign.github.io/VIAL-APP/index.html" target="_blank" rel="noopener"><div class="proyect-container">
+                <a class="coding" href="https://uunaign.github.io/VIAL-APP/index.html" target="_blank" rel="noopener"><div class="proyect-container">
                     <img class="proyect-image" src="element-images/VIAL-APP-OPENER.png" alt="vial-app-opener">
                     <div id="info">
                         <h1 class="proyect-title">VIAL APP OPENER</h1>
@@ -66,7 +76,7 @@
                     </div>
                 </div></a>
 
-                <a href="https://uunaign.github.io/Calculadora-HTML/" target="_blank" rel="noopener"><div class="proyect-container">
+                <a class="coding creative" href="https://uunaign.github.io/Calculadora-HTML/" target="_blank" rel="noopener"><div class="proyect-container">
                     <img class="proyect-image" src="element-images/CALCULADORA.png" alt="calculadora-js">
                     <div id="info">
                         <h1 class="proyect-title">CALCULADORA</h1>
@@ -78,6 +88,42 @@
         </div>
 
     </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const projects = document.querySelectorAll('.grid-proyectos > a');
+    const filterButtons = document.querySelectorAll('.filtros img[data-filter]');
+    const removeBtn = document.getElementById('remove-filters');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-filter');
+            
+            projects.forEach(project => {
+                // Comprobamos si la lista de clases contiene la categoría
+                if (project.classList.contains(category)) {
+                    project.style.setProperty('display', 'block', 'important');
+                } else {
+                    project.style.setProperty('display', 'none', 'important');
+                }
+            });
+
+            // Gestión visual de botones
+            removeBtn.style.display = 'inline-block';
+            filterButtons.forEach(btn => btn.style.opacity = '0.2');
+            button.style.opacity = '1';
+        });
+    });
+
+    removeBtn.addEventListener('click', () => {
+        projects.forEach(project => {
+            project.style.setProperty('display', 'block', 'important');
+        });
+        removeBtn.style.display = 'none';
+        filterButtons.forEach(btn => btn.style.opacity = '1');
+    });
+});
+</script>
 </body>
 
 </html>

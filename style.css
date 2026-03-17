@@ -19,6 +19,26 @@ html, body {
     background-size: cover;
 }
 
+.long {
+    min-height: 100%; 
+    
+    background: #FFFFFF;
+    background: radial-gradient(circle, 
+        rgba(255, 255, 255, 1) 20%, 
+        rgba(69, 105, 144, 0.75) 15%, 
+        rgba(255, 255, 255, 1) 40%, 
+        rgba(69, 105, 144, 0.75) 35%, 
+        rgba(255, 255, 255, 1) 60%, 
+        rgba(69, 105, 144, 0.75) 55%, 
+        rgba(255, 255, 255, 1) 75%
+    );
+
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .half {
     height: 100vh;
     background: #FFFFFF;
@@ -371,5 +391,42 @@ input {
         font-size: 3.5vw;
     }
 
+
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 50px 0;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 50px 0;
+}
+
+.filter-container img {
+    width: 10%;
+}
+
+.filtros img {
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+@media (max-width: 40.5em){
+    
+    .filtros {
+        flex-direction: column;
+    }
+    .filter-container img {
+        width: 40%;
+    }
 
 }
